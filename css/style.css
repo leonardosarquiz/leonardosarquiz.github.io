@@ -1,0 +1,1497 @@
+
+/*@font-face {
+    font-family: "urbanist";
+    src: url('Urbanist-SemiBold') format('truetype'), url('Urbanist-Light') format('truetype'), url('Urbanist-Medium') format('truetype'),
+     url('Urbanist-Regular') format('truetype'), 
+    
+    url('Urbanist-Bold') format('truetype'), 
+    url('Urbanist-ExtraBold') format('truetype'), url('Urbanist-Black') format('truetype')
+     
+   
+}
+@font-face {
+    font-family: "sacramento";
+    src: url('Sacramento') format('truetype');
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: #FCEFE9;
+}
+[data-menu="button"] {
+    display: none;
+}
+
+.btnmenu {
+    display: none;
+}
+header{
+    height: 112px; 
+   background: #FCEFE9;
+   width: 100% ;
+   display: flex;
+   justify-content: center;
+  
+  
+
+}
+.header2 {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    background:#FCEFE9;   
+    
+}
+.logo {
+    padding-left: 116px;
+    display: flex;
+    
+    margin-bottom: 12px;
+   display: cover;
+   
+}
+nav {
+  
+    display: flex;
+    justify-content: end;
+    padding-right: 57px;
+}
+.menu {
+    display: flex;
+   
+    
+    
+}
+.amenu {
+    text-decoration: none;
+    height: 0.875rem;
+    align-items: center;
+    color: #667B68;
+    justify-content: center;
+    font-family: 'urbanist';
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+.menu li {
+    display: flex;
+    padding-left: 115px;
+    height: 0.875rem;
+    align-items: center;
+    
+    justify-content: center;
+    font-family: 'urbanist';
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+.amenu:hover {
+    color: #A3B899;
+   
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.botao {
+    text-decoration: none;
+    background-color: #667B68;
+    color: #FCEFE9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 50px;
+    width:170px ;
+    border-radius: 8px;
+    
+}
+.botao:hover {
+    background: #A3B899;
+}
+
+/* body */
+.image-principal {
+    height: calc(100vh - 112px);
+    width: 100%;
+    background-image: url(../images/Banner_principal.png);
+    background-size: cover;
+}
+.body2 {
+   padding-top: 47px;
+ 
+    background: #FCEFE9;
+}
+.borboleta {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+  
+}
+.texto1 {
+    width: 1156px;
+    height: 245px;
+    margin: 0 auto;
+    margin-top: 16px;
+    
+   
+}
+
+.texto1:after {
+    content: "";
+    position: absolute;
+   margin-top: 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 284px;
+    height: 4px;
+    background-color:#A3B899;
+    
+  }
+  
+  
+.texto1 p {
+    font-size: 2.4375rem;
+    line-height: 72px;
+    letter-spacing: -3%;
+    color: #A3B899;
+    text-align: center;
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-style: normal;
+    
+    
+}
+
+.sobre {
+    display: flex;
+    max-width: 1238px;
+    padding-top: 105px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #FCEFE9;
+   
+    
+}
+.fotosobre {
+   flex: 1;
+    width: 400px;
+    height: 473px;
+    display: block;}
+    
+
+   
+   
+
+.contentsobre {
+   display: block;
+   justify-content: flex-start;
+  
+}
+.nomeecoracao {
+    display: inline;
+   align-items:  flex-end;
+}
+.nomebody {
+    display: flex;
+    align-items: center;
+}
+
+
+.nomesobre {
+    
+    color: #667B68;
+    font-size: 0.75rem;
+    font-weight: 600;
+ padding-top: 80px;
+    font-family: 'Urbanist';
+font-style: normal;
+line-height: 20px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+.experienciasobre {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+  display: flex;
+  flex-wrap: wrap;
+    color: #A3B899;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-style: normal;
+    padding-top: 32px;
+    font-family: 'Urbanist';
+    box-sizing: border-box;
+
+}
+.subexperienciasobre {
+
+width: 510px;
+height: 112px;
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 500;
+font-size: 1.125rem;
+line-height: 28px;
+letter-spacing: -0.04em;
+color: #667B68;
+opacity: 0.8;
+margin-top: 35px;
+text-align: start;
+
+
+}
+.consultabtn {
+    width: 231px;
+    height: 57px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    font-family: 'Urbanist';
+    font-style: normal;
+    border: none;
+    background-color: #667B68;
+   
+    margin-top: 56px;
+    cursor: pointer;
+      
+}
+.consultabtn:hover {
+    background: #A3B899;
+}
+
+.body3fundo {
+    width: 100%;
+    background-color: #FCEFE9;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+.body3 {
+    display: flex;
+    max-width: 1238px;
+    height: 162px;
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #FCEFE9;
+}
+
+.especialidades {
+    flex: 1;
+    display: block;
+}
+.foco {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+}
+.foco p {
+   font-size: 1.125rem;
+   letter-spacing: -0.02em;
+   line-height: 28px;
+   color: #667B68;
+   font-family: 'Urbanist';
+font-style: normal;
+font-weight: 500;
+opacity: 0.6;
+}
+.especialidadestitulo {
+    text-transform: uppercase;
+    color:#667B68 ;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+    font-family: 'Urbanist';
+font-style: normal;
+
+}
+.especialidades2 {
+    font-size: 3rem;
+    letter-spacing: -0.04em;
+    color: #A3B899;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: 'Urbanist';
+font-style: normal;
+    padding-top: 40px;
+    margin-left: 0;
+
+}
+
+
+.banner {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #667B68;
+   padding-top: 100px;
+}
+
+/* sledeshow */
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  .slide {
+    
+    padding-top: 70px;
+    padding-bottom: 60px;
+   
+  }
+  .slideponta {
+    padding-right: 0px;
+   padding-left: 0px;
+  }
+  .centro {
+    
+    padding-left: 25px;
+  }
+  .centro2{ 
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+/* depoimentos css*/
+.body4 {
+    width: 100%;
+    height: 480px;
+    background: #F8D2C5;
+    display: block;
+    
+  
+    
+}
+.containerh4 {
+    max-width: 1238px;
+    height: 10px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+   
+    
+}
+.titulob4 {
+    padding-top: 18px;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    line-height: 74px;
+    color: #667B68;
+    display: flex;
+    justify-content: center;
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+}
+.body4content1 {
+    flex: 1;
+    
+}
+.body4content2 {
+    flex: 1;
+    
+}
+.textocontent2 {
+    position: absolute;
+    top: 80px;
+
+    padding-left: 22px;
+    color: #667B68;
+    display: flex;
+    width: 592px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875;
+    line-height: 20px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    font-family: 'Urbanist';
+    font-style: normal;
+}
+
+.body4contentimg {
+    
+}
+
+
+/* formulario */
+.formulariobody {
+    width: 100%;
+    height: 780px;
+    background: #DDE6D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formcontainer {
+    display: block;
+    padding: 10px;
+    width: 910px;
+    height: 666px;
+   
+   
+}
+.titleform {
+    display: flex;
+    align-items: center;
+   
+}
+.tilteform2 {
+    font-weight: 400;
+    font-size: 4.375rem;
+    line-height: 74px;
+    color: #667B68;
+    font-family: 'Sacramento';
+    font-style: normal;
+}
+.coracaofoto {
+    height: 32.68px;
+    width: 26.73px;
+    margin-left: 15px;
+
+}
+.legendatitle {
+ font-weight: 600;
+font-size: 1.5625rem;
+line-height: 28px;
+letter-spacing: -0.02em;
+font-family: 'Urbanist';
+font-style: normal;
+color: #667B68;
+opacity: 0.8;
+}
+.formularioinputs {
+    display: block;
+    padding-top: 20px;
+}
+input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+   min-width: 100%;
+   max-width: 100%;
+   cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 600;
+    font-family: 'Urbanist';
+font-style: normal;
+font-size: 1.25rem;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #667B68;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+outline: none;
+
+  }
+  textarea {
+    min-height: 72px;
+   max-height: 72px;
+  }
+  .btnform {
+    border: none;
+    outline: none;
+    width: 240px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: #A3B899;;
+    color: #ffff;
+   font-weight: 700;
+   font-size: 1.25rem;
+   font-family: 'Urbanist';
+font-style: normal;
+   line-height: 24px;
+   letter-spacing: -0.02em;
+   text-align: center;
+   cursor: pointer;
+ 
+  }
+  .posionbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnform:hover {
+    background: #667B68;
+  }
+
+
+
+
+
+
+
+
+  /*    local */
+  .local {
+    height: 660px;
+    background-color: #FCEFE9;
+    display: flex;
+  }
+  .mapa {
+    cursor: pointer;
+    flex: 1;}
+ 
+
+    
+   
+  .consultoriobody {
+    flex: 1;
+    display: block;
+  }
+  .consultoriobody2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .consultoriotitle {
+   font-size: 5rem;
+   color: #667B68;
+   opacity: 0.8;
+   font-weight: 400;
+opacity: 0.8;
+line-height: 54px;
+padding-top: 143px;
+font-family: 'Sacramento';
+font-style: normal;
+letter-spacing: -0.02em;
+text-align: center;
+  }
+  .bodyendereço {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+  }
+  .endereço {
+      color: #667B68;
+      font-weight: 500;
+font-size: 1.187rem;
+line-height: 28px;
+      opacity: 0.6;
+      padding-top: 55px;
+      font-family: 'Urbanist';
+font-style: normal;
+letter-spacing: -0.02em;
+  }
+  .borboletalocal {
+    padding-top: 34px;
+ 
+  }
+  .borboletal2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 94px;
+  }
+  .bodybtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+  }
+  .btnendereço {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 240px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: #A3B899;;
+    color: #ffff;
+   font-weight: 700;
+   font-size: 1.25rem;
+   line-height: 24px;
+   font-family: 'Urbanist';
+   font-style: normal;
+   text-align: center;
+   cursor: pointer;
+   border: none;
+   letter-spacing: -0.02em;
+  }
+  .btnendereço:hover {
+    background: #667B68;
+  }
+
+  /* contatos */
+
+  .contatosbody {
+    background-color: #A3B899;
+    width: 100%;
+    height: 518px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sobrecontato {
+    display: block;
+    
+    width: 50%;
+    
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+ .sobreinfo {
+    padding-top: 40px;
+ }
+ .textcontatos {
+    font-weight: 400;
+font-size: 1rem;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+opacity: 0.6;
+font-family: 'Urbanist';
+font-style: normal;
+ }
+ .tituloredessociais {
+    padding-top: 30px;
+    font-weight: 400;
+font-size: 0.75rem;
+line-height: 20px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 0.6);
+
+ }
+ .redessociais {
+    display: flex;
+    
+ }
+ .logoface {
+    margin-right: 12px;
+ }
+ .linksecontatos {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .linksrodape {
+   padding-top: 83px;
+   display: block;
+ }
+ .linksrodape a {
+    display: block;
+ }
+ .linktilte {
+    font-family: 'Urbanist';
+font-style: normal;
+    font-weight: 400;
+font-size: 0.75rem;
+line-height: 20px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 0.6);
+ }
+ .links {
+text-decoration: none;
+font-weight: 400;
+font-size: 0.875;
+line-height: 18px;
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.02em;
+color: #FCEFE9;
+padding-top: 10px;
+font-family: 'Urbanist';
+font-style: normal;
+
+
+ }
+ .containericones {
+    display: block;
+ }
+ .contatoeinfos {
+   padding-left: 105px;
+   padding-top: 83px;
+   display: block;
+ }
+ .contatoeinfostitle {
+    font-size: 0.75rem;
+    font-family: 'Urbanist';
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 0.6);
+
+ }
+ .telefone {
+    padding-top: 20px;
+    display: flex;
+ }
+ .telefonebody {
+    display: block;
+ }
+ .telefonetitulo {
+    font-family: 'Urbanist';
+font-style: normal;
+    font-weight: 400;
+font-size: 0.875rem;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 18px;
+
+ }
+ .numero {
+    font-weight: 400;
+font-size: 1.125rem;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+padding-left: 18px;
+padding-top: 7px;
+font-family: 'Urbanist';
+font-style: normal;
+ }
+
+ .horario {
+    display: flex;
+    padding-top: 50px;
+ }
+
+ /* footer */
+ footer {
+    display: block;
+    height: 80px;
+    width: 100%;
+    background-color: #A3B899;
+    padding-left: 65px;
+ }
+ .fa {
+    font-weight: 500;
+font-size: 1rem;
+line-height: 26px;
+color: rgba(255, 255, 255, 0.6);
+
+ }
+ .fb {
+    font-weight: 400;
+font-size: 1rem;
+line-height: 26px;
+font-family: 'Urbanist';
+font-style: normal;
+
+
+color: #667B68;
+
+ }
+
+/* animaçoes js */
+ .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+ .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+   
+}
+
+
+@media (max-width:1274px) {
+    .body4 {
+        height: 700px;
+       }
+        .containerh4 {
+            display: block;
+            width: 100%;
+            
+            
+        }
+        .body4content1 {
+           height: 300px;
+            width: 100%;
+            padding-left: 300px;
+           
+            
+        }
+        .body4content2 {
+           height: 300px;
+           padding-left: 300px;
+            width: 100%;
+           
+        }
+        .textocontent2 {
+            width: 100%;
+            flex-direction: column;
+            display: block;
+            
+            
+        }
+        
+        .pcontent2 {
+           
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 385px;
+            position: absolute;
+            padding-bottom: 80px;
+            padding-right: 140px;
+            width: 790px;
+           
+            
+            
+        }
+        .pcontent1 {
+           width: 100%;
+           position: absolute;
+        }
+}
+@media (max-width:1158px)  {
+    .body4content1 {
+        height: 300px;
+         width: 100%;
+         padding-left: 250px;
+        
+         
+     }
+     .body4content2 {
+        height: 300px;
+        padding-left: 250px;
+         width: 100%;
+        
+     }
+}
+
+@media (max-width:1099px)  {
+
+.logo {
+    padding-left: 20px;
+    display: flex;
+    
+}
+.botao {
+    width: 150px;
+    height: 40px;
+}
+.header2 {
+     
+}
+.menu li {
+    padding-left: 60px;
+}
+.fotoperfil {
+   padding-left: 40px;
+}
+.texto1 {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.sobre {
+    flex-direction: column;
+    display: flex;
+     
+}
+.texto1:after {
+    margin-top: 0;
+}
+.sobre img {
+    padding-left: 70px;
+    padding-top: 50px;
+}
+.nomesobre {
+    padding-left: 8px;
+   
+}
+.nomebody {
+    display: flex;
+    justify-content: center;
+    
+}
+.experienciasobre {
+    display: flex;
+    justify-content: center;
+}
+.subexperienciasobre {
+    text-align: center;
+    width: 100%;
+}
+.bodyconsultabtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.especialidades {
+    padding-left: 15px;
+}
+.foco {
+align-items: flex-end;
+padding-right: 20px;
+}
+.consultoriotitle {
+    font-size: 4rem;
+}
+.endereço {
+    font-size: 1rem;
+}
+.linksecontatos {
+    flex-wrap: nowrap;
+
+}
+.contatoeinfos {
+    padding-right: 0;
+    padding-top: 50px;
+    
+}
+.sobrecontato {
+    padding-top: 30px;
+}
+.linksrodape {
+    padding-top: 50px;
+}
+
+
+}
+
+@media (max-width:872px)  {
+    .menu li {
+        padding-left: 50px;
+    }
+    nav {
+        padding-right: 10px;
+    }
+
+    .botao {
+        width: 140px;
+        height: 40px;
+    }
+}
+
+
+
+
+/* menu mobile */
+
+
+
+@media (max-width:818px)  {
+    header {
+        height: 100px;
+    }
+     [data-menu="button"] {
+        display: flex;
+       justify-content: center;
+        border: none;
+        cursor: pointer;
+        margin: 32px; 
+        background: #667B68;
+        
+        font-family: 'Urbanist';
+        font-weight: bold;
+        color: #FCEFE9;
+        border-radius: 4px;
+        padding: .5rem 1rem;
+        align-items: center;
+        position: relative;
+        z-index: 300;
+        width: 100px;
+    }
+    [data-menu="button"]::before {
+        content: '';
+        margin-right: 4px;
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;
+        transition: transform .3s;
+    }
+    [data-menu="button"]:hover {
+        background-color: #A3B899;
+    }
+
+    [data-menu="button"].active::before {
+    transform: rotate(90deg);
+    }
+
+   [data-menu="list"] {
+   
+    display: none;
+    margin-top: 0px;
+    position: absolute;
+    background:#FCEFE9 ;
+    width: 170px;
+    margin-top: 30px;
+    z-index: 200;
+    padding: 45px 0 20px 0;
+    box-shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+   
+    
+   
+   
+   }
+   .menu li {
+    padding-left: 0;
+   }
+ 
+   [data-menu="list"].active {
+    display: block;
+    animation: show-right .3s forwards;
+   }
+   .menu li {
+ 
+height: 40px;
+display: flex;
+   }
+   .botao {
+    margin-top: 15px;
+    width: 100px;
+    margin-left: 0;
+    border-radius: 4px;
+    display: flex;
+   
+   }
+   nav {
+    padding-right: 0;
+   }
+   .falecomigo {
+    padding-right: 0;
+   display: flex;
+   align-items: center;
+   }
+  
+
+    .image-principal {
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-image: url(../images/Banner_principal.png);
+        background-size: cover;
+    }
+    
+
+    .texto1 {
+       
+        width: 100%;
+    }
+    .texto1 p {
+        font-size: 20px;
+    }
+    .sobre {
+        flex-direction: column;
+        
+    }
+    
+    .nomebody {
+        display: flex;
+        justify-content: center;
+    }
+    .experienciasobre {
+        display: flex;
+        justify-content: center;
+    }
+    .subexperienciasobre {
+        text-align: center;
+        width: 100%;
+    }
+    .bodyconsultabtn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .especialidades {
+        padding-left: 15px;
+    }
+    .foco {
+    align-items: flex-start;
+    }
+     /*slider show */
+     
+     .slide {
+       width: 100%;
+       padding-bottom: 0px;
+        padding-top: 7px;
+        margin-bottom: -10px;
+     }
+     .centro2 {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     .centro {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     .slides {
+      
+       
+     }
+
+
+
+
+
+     /* depoimentos */
+   .body4 {
+    height: 700px;
+   }
+    .containerh4 {
+       
+        width: 100%;
+        display: block;
+    }
+    .body4content1 {
+       height: 300px;
+        width: 100%;
+      padding-left: 50px;
+       
+        
+    }
+    .body4content2 {
+       height: 300px;
+       padding-left: 50px;
+        width: 100%;
+       
+    }
+    .textocontent2 {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+    }
+    
+    .pcontent2 {
+       
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 385px;
+        position: absolute;
+        padding-bottom: 80px;
+        padding-right: 140px;
+        
+       
+        
+        
+    }
+
+
+    .pcontent1 {
+       width: 100%;
+       position: absolute;
+    }
+    .formcontainer {
+        width: 80%;
+    }
+    .consultoriotitle {
+        font-size: 4rem;
+    }
+    .endereço {
+        font-size: 1rem;
+    }
+    .linksecontatos {
+        flex-wrap: nowrap;
+
+    }
+    .contatoeinfos {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .sobrecontato {
+        padding-top: 30px;
+    }
+    .linksrodape {
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width:450px) {
+    
+    .texto1 p {
+       font-size: 1.25rem;
+      line-height: 37px;
+      margin-left: 0;
+     
+    }
+    .texto1 {
+        height: 200px;
+        padding-left: 13px;
+        padding-right: 13px;
+        
+    }
+    .experienciasobre {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .subexperienciasobre {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    .brs {
+        display: none;
+    }
+    .consultabtn {
+        width: 14.4375rem;
+    }
+    .body3 {
+        display: block;
+        height: 280px;
+    }
+    .especialidades2 {
+        padding-top: 20px;
+    }
+    .foco p {
+        
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+       
+      
+    }
+    .especialidades {
+        padding-left: 0;
+        text-align: center;
+    }
+    .body3fundo {
+        padding-top: 100px;
+    }
+
+    .textocontent2 {
+        letter-spacing: -0.05em;
+    }
+    .body4content1 {
+        
+        
+        padding-left: 15px;
+       
+    }
+    .pcontent1 {
+       padding-right: 29px;
+        padding-top: 10px;
+        
+        
+        
+        
+    }
+   
+    .body4contentimg {
+        padding-left: px;
+        padding-top: 30px;
+      
+    }
+    .body4 {
+        height: 900px;
+        padding-right: 0px;
+    }
+    
+    .body4contentimg {
+        
+    }
+    .pcontent2 {
+        margin-top: 450px;
+        padding-right: 30px;
+        padding-top: 40px;
+       
+ }
+ .body4content2 {
+    padding-right: 40px;
+    padding-left: 15px;
+    padding-top: 40px;
+    text-align: start;
+    
+ }
+ .textocontent2 {
+    padding-left: none;
+    padding-left: 0;
+    
+    
+ }
+ .imgb {
+    margin-top: 60px;
+   padding-left: 0px;
+ }
+ .tilteform2 {
+    line-height: 55px;
+ }
+ .legendatitle {
+    padding-top: 15px;
+   
+ }
+ .btnform {
+    width: 220px;
+    height: 55px;
+ }
+ .formulariobody {
+    height: 700px;
+ }
+ .local {
+    height: 550px;
+ }
+ .borboletalocal {
+    padding-top: 0;
+ }
+ .bodybtn {
+    padding-top: 25px;
+ }
+ .consultoriotitle {
+    padding-top: 90px;
+ }
+ .mapa {
+    display: none;
+ }
+ .btnendereço {
+    height: 55px;
+    width: 230px;
+ }
+ .endereço {
+    padding-top: 40px;
+ }
+ 
+.contatosbody {
+    display: block;
+    height: 765px;
+}
+.sobrecontato {
+    width: 100%;
+padding-left: 0;
+   
+}
+.sobreinfo {
+    text-align: center;
+}
+.tituloredessociais {
+    text-align: center;
+}
+.redessociais {
+    display: flex;
+    justify-content: center;
+}
+.logorodape {
+   display: flex;
+   justify-content: center;
+}
+.linksecontatos {
+display: flex;
+flex-direction: column;
+width: 100%;
+
+}
+.linksrodape {
+   text-align: center;
+}
+.contatoeinfos {
+    text-align: center;
+    
+  
+   
+}
+.numero {
+    width: 100%;
+    padding-left: 0;
+}
+.telefone {
+    display: block;
+   
+    text-align: center;
+}
+.contatoeinfosestru {
+    display: flex;
+    width: 100%;
+    
+}
+.horario {
+    padding-top: 20px;
+    display: block;
+   
+}
+.telefonetitulo {
+    padding-left: 0;
+}
+.horariomedia {
+    text-align: center;
+    flex: 1;
+}
+.local1 {
+    text-align: center;
+    flex: 1;
+}
+.containericones {
+    flex: 1;
+    padding-left: 10px;
+}
+.telefonetitulo {
+    line-height: 15px;
+    padding-top: 10px;
+}
+.numero {
+    line-height: 23px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telefonetitulo {
+    padding-top: 0;
+}
+.endereco {
+    padding-top: 8px;
+}
+footer {
+    height: 400px;
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-bottom: 0;
+
+
+
+}
+.footer2 {
+    
+
+}
+ }
+
+
+
+
+
+
+
