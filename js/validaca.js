@@ -1,20 +1,12 @@
 export default function validacaoForm() {
-
-}
-/*const form = document.querySelector('.formularioinputs');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'send-email.php');
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      alert('E-mail enviado com sucesso!');
-    } else {
-      alert('Erro ao enviar e-mail!');
+  function validarTelefone() {
+    const telefone = document.getElementById('number').value;
+    const regex = /^\([1-9]{2}\) [2-9][0-9]{3,4}\-[0-9]{4}$/;
+    if (!regex.test(telefone)) {
+      alert('Telefone inválido!');
+      return false;
     }
-  };
-  xhr.send(new FormData(form));
-});
-*/
+    return true;
+  }
+}
+/* validacao fumero telefone */

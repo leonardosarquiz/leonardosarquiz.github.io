@@ -1,23 +1,10 @@
 
-/*@font-face {
-    font-family: "urbanist";
-    src: url('Urbanist-SemiBold') format('truetype'), url('Urbanist-Light') format('truetype'), url('Urbanist-Medium') format('truetype'),
-     url('Urbanist-Regular') format('truetype'), 
-    
-    url('Urbanist-Bold') format('truetype'), 
-    url('Urbanist-ExtraBold') format('truetype'), url('Urbanist-Black') format('truetype')
-     
-   
-}
-@font-face {
-    font-family: "sacramento";
-    src: url('Sacramento') format('truetype');
-}
-*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'urbanist';
     
 }
 body {
@@ -81,6 +68,7 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     
 }
 .menu li {
@@ -108,7 +96,8 @@ nav {
 
 .botao {
     text-decoration: none;
-    background-color: #667B68;
+   
+    background: #A3B899;
     color: #FCEFE9;
    display: flex;
    align-items: center;
@@ -119,7 +108,7 @@ nav {
     
 }
 .botao:hover {
-    background: #A3B899;
+    background-color: #667B68;
 }
 
 /* body */
@@ -186,10 +175,13 @@ nav {
     
 }
 .fotosobre {
-   flex: 1;
-    width: 400px;
+   
+    width: 550px;
     height: 473px;
-    display: block;}
+    display: block;
+    background-image: url(../images/Component\ 2\ 1.png);
+   
+}
     
 
    
@@ -198,6 +190,7 @@ nav {
 .contentsobre {
    display: block;
    justify-content: flex-start;
+   padding-left: 80px;
   
 }
 .nomeecoracao {
@@ -266,14 +259,14 @@ text-align: start;
     font-family: 'Urbanist';
     font-style: normal;
     border: none;
-    background-color: #667B68;
-   
+    background: #A3B899;
     margin-top: 56px;
     cursor: pointer;
       
 }
 .consultabtn:hover {
-    background: #A3B899;
+    
+    background-color: #667B68;
 }
 
 .body3fundo {
@@ -610,6 +603,7 @@ line-height: 28px;
       font-family: 'Urbanist';
 font-style: normal;
 letter-spacing: -0.02em;
+text-align: center;
   }
   .borboletalocal {
     padding-top: 34px;
@@ -760,6 +754,12 @@ color: rgba(255, 255, 255, 0.6);
  .telefonebody {
     display: block;
  }
+ .imgsfooter {
+height: 60px;
+width: 60px;
+
+
+ }
  .telefonetitulo {
     font-family: 'Urbanist';
 font-style: normal;
@@ -781,6 +781,7 @@ padding-left: 18px;
 padding-top: 7px;
 font-family: 'Urbanist';
 font-style: normal;
+padding-right: 5px;
  }
 
  .horario {
@@ -983,6 +984,10 @@ padding-right: 20px;
 .linksrodape {
     padding-top: 50px;
 }
+.sobre {
+    align-items: center;
+}
+
 
 
 }
@@ -1008,7 +1013,7 @@ padding-right: 20px;
 
 
 
-@media (max-width:818px)  {
+@media (max-width:825px)  {
     header {
         height: 100px;
     }
@@ -1099,8 +1104,9 @@ display: flex;
     .image-principal {
         height: calc(100vh - 100px);
         width: 100%;
-        background-image: url(../images/Banner_principal.png);
         background-size: cover;
+        background-image: url(../images/Banner_principal-mobile.png);
+        
     }
     
 
@@ -1115,7 +1121,12 @@ display: flex;
         flex-direction: column;
         
     }
-    
+    .fotosobre  {
+      margin: 0 auto;
+    }
+    .contentsobre {
+        padding-left: 0px;
+    }
     .nomebody {
         display: flex;
         justify-content: center;
@@ -1157,10 +1168,7 @@ display: flex;
         padding-left: 0px;
         padding-right: 0px;
      }
-     .slides {
-      
-       
-     }
+     
 
 
 
@@ -1238,11 +1246,33 @@ display: flex;
     .linksrodape {
         padding-top: 50px;
     }
+    /* mapa */
+    .mapa {
+       width: 400px;
+    }
+    
 }
 
 
 @media (max-width:450px) {
-    
+    .enderecofooter {
+      text-align: center;
+      padding-right: 3px;
+    }
+    .containericones {
+        padding-left: 0px;
+    }
+
+    .image-principal {
+        width: 100%;
+        background-size: cover;
+        background-image: url(../images/Banner_principal-mobile350.png);
+    }
+    .fotosobre {
+        background-image: url(../images/sobrejanetemobile.png);
+        width: 288px;
+        height: 236px;
+    }
     .texto1 p {
        font-size: 1.25rem;
       line-height: 37px;
@@ -1286,6 +1316,9 @@ display: flex;
        
       
     }
+    .fotosobre img {
+      
+    }
     .especialidades {
         padding-left: 0;
         text-align: center;
@@ -1322,9 +1355,7 @@ display: flex;
         padding-right: 0px;
     }
     
-    .body4contentimg {
-        
-    }
+  
     .pcontent2 {
         margin-top: 450px;
         padding-right: 30px;
@@ -1475,7 +1506,7 @@ width: 100%;
     padding-top: 8px;
 }
 footer {
-    height: 400px;
+    height: 100px;
     padding-top: 30px;
     padding-left: 10px;
     margin-bottom: 0;
